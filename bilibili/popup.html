@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 15px;
+    }
+    h3 {
+      color: #00a1d6;
+    }
+    .button-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    button {
+      flex: 1;
+      padding: 12px;
+      font-size: 14px;
+      cursor: pointer;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    #startJsonButton {
+        background-color: #00a1d6;
+    }
+    #startMdButton {
+        background-color: #4CAF50;
+    }
+    button:disabled {
+      background-color: #ccc !important;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #333;
+      word-wrap: break-word;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h3>B站评论展开与采集器 V5</h3>
+  <div class="button-container">
+    <button id="startJsonButton">采集并下载 JSON</button>
+    <button id="startMdButton">采集并下载 MD</button>
+  </div>
+  <div id="status">等待开始...</div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "B站评论展开与采集器",
+  "version": "2.0",
+  "description": "自动展开B站评论回复，采集所有评论及楼中楼回复，并下载为JSON文件。",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://*.bilibili.com/video/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
