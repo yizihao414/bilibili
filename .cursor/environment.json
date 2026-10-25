@@ -1,0 +1,5 @@
+{
+  "name": "bilibili",
+  "chromeExecutablePath": "/usr/local/bin/google-chrome",
+  "install": "bash .cursor/install.sh"
+}
