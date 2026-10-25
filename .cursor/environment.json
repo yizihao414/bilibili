@@ -1,0 +1,5 @@
+{
+  "name": "bilibili",
+  "chromeExecutablePath": "/usr/local/bin/google-chrome",
+  "install": "google-chrome --version\npython3 -c \"import json; from pathlib import Path; root = Path('bilibili'); manifest = json.loads((root / 'manifest.json').read_text()); assert manifest.get('manifest_version') == 3, manifest.get('manifest_version'); required = ['popup.html', 'popup.js', 'content.js', 'icon16.png', 'icon48.png', 'icon128.png']; missing = [name for name in required if not (root / name).is_file()]; assert not missing, ', '.join(missing); assert manifest.get('action', {}).get('default_popup') == 'popup.html', manifest.get('action'); print(manifest['name'], 'v' + str(manifest['version']), 'ok')\""
+}
